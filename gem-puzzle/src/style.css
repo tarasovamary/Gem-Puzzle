@@ -1,0 +1,92 @@
+body {
+    font-family: 'Trispace', sans-serif;
+    margin: 0 auto;
+    padding: 20px 0px 30px;
+    background:
+	linear-gradient(limegreen,transparent),
+	linear-gradient(90deg,skyblue,transparent),
+	linear-gradient(-90deg,coral,transparent);
+    background-blend-mode: screen;
+}
+.title {
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #47412a;
+}
+canvas {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.buttons__control, .buttons__save {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.button__timer, .button__newgame, .button__sound, .button__load, .button__save, .button__score {
+    cursor:pointer;
+    display: block;
+    width: 170px;
+    height: 40px;
+    font-family: 'Trispace', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: #fde67f;
+    color: #47412a;
+    border: none;
+}
+.button__sound, .button__score {
+   margin: 0 auto 10px;
+   background-color: #ffa8a8;
+}
+.button__sound:hover, .button__score:hover {
+    background-color: #f57d7d;
+}
+
+.button__timer:hover, .button__newgame:hover, .button__load:hover, .button__save:hover {
+    background-color: #ffde4b;
+}
+.button__timer:active, .button__newgame:active, .button__sound:active, .button__load:active, .button__save:active, .button__score:active {
+    background-color: #86ff76;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px;
+    font-size: 18px;
+}
+.game__moves {
+    padding-right: 15px;
+}
+
+.top-score {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.top-score__content {
+    background-color: #ffffff;
+    margin: 0   auto;
+    padding: 20px;
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 35%;
+}
